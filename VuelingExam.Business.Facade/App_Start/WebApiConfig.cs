@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using VuelingExam.Business.Filters.Framework;
 
 namespace VuelingExam.Business.Facade
 {
@@ -19,6 +20,9 @@ namespace VuelingExam.Business.Facade
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Filters.Add(new NotImplementedExceptionFilterAttribute());
+            config.Filters.Add(new NullReferenceExceptionFilterAttribute());
         }
     }
 }
