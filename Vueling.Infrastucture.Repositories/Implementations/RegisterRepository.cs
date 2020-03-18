@@ -13,6 +13,15 @@ namespace Vueling.Infrastucture.Repositories.Implementations
 
 		private readonly RepositoryUtilities util = new RepositoryUtilities(path);
 
+		public RegisterRepository()
+		{
+		}
+
+		public RegisterRepository(ILog logger)
+		{
+			this.logger = logger;
+		}
+
 		public bool Create(Register model)
 		{
 			logger.Debug("Start Create method");

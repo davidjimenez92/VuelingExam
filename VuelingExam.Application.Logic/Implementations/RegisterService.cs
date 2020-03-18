@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using log4net;
 using Vueling.Infrastucture.Repositories.Contracts;
 using VuelingExam.Application.Logic.Contracts;
@@ -28,6 +24,11 @@ namespace VuelingExam.Application.Logic.Implementations
 		public bool Create(string[] list)
 		{
 			logger.Debug("Start Create method");
+			if (list == null)
+			{
+				logger.Debug("Finish Create method");
+				throw new NullReferenceException();
+			}
 			var model = new Register() { Name = list[0], Planet = list[1], Date = DateTime.Parse(list[2])};
 			var response = repository.Create(model);
 			logger.Debug("Finish Create method");
