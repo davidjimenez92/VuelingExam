@@ -19,7 +19,7 @@ The solution consists of 6 projects plus test projects.
 ### UML Diagram
 ![alt text](https://github.com/davidjimenez92/VuelingExamm/blob/master/ddd.png)
 ### Technology stack
-`Visual Studio 2019 Comunity edition | C# | .NET Framework`
+`Visual Studio 2019 Comunity edition | C# | .NET Framework 4.7.2`
 
 ### Libraries 
 1. `Autofac v5.1.2`
