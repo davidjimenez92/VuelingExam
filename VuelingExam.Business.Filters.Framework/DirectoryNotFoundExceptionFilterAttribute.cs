@@ -1,0 +1,30 @@
+﻿using System.IO;
+using System.Net;
+using System.Net.Http;
+using System.Text;
+using System.Web.Http.Filters;
+
+namespace VuelingExam.Business.Filters.Framework
+{
+	public class DirectoryNotFoundExceptionFilterAttribute: ExceptionFilterAttribute
+	{
+		public override void OnException(HttpActionExecutedContext actionExecutedContext)
+		{
+			if (actionExecutedContext.Exception is DirectoryNotFoundException)
+			{
+				var httpResponseMessage =
+					new HttpResponseMessage(HttpStatusCode.InternalServerError)
+					{
+						Content = new StringContent(actionExecutedContext.Exception.Message, Encoding.UTF8, "text/plain"),
+						StatusCode = HttpStatusCode.InternalServerError,
+						ReasonPhrase = "Null Reference Error"
+					};
+
+				actionExecutedContext.Response = httpResponseMessage;
+			}
+
+			base.OnException(actionExecutedContext);
+		}
+	}
+
+}

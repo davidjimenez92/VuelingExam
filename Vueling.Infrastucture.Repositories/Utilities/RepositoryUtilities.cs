@@ -13,6 +13,10 @@ namespace Vueling.Infrastucture.Repositories.Utilities
 			this.path = path;
 		}
 
+		/// <exception cref="UnauthorizedAccessException"></exception>>
+		/// <exception cref="PathTooLongException"></exception>>
+		/// <exception cref="DirectoryNotFoundException"></exception>>
+		/// <exception cref="IOException"></exception>>
 		public void CreateFile()
 		{
 			if (!FileExists())
@@ -28,10 +32,15 @@ namespace Vueling.Infrastucture.Repositories.Utilities
 				{
 					throw ex;
 				}
+				catch (DirectoryNotFoundException ex)
+				{
+					throw ex;
+				}
 				catch (IOException ex)
 				{
 					throw ex;
 				}
+				
 		}
 
 		public bool FileExists()

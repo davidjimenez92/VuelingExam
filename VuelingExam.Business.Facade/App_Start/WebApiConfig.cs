@@ -26,6 +26,7 @@ namespace VuelingExam.Business.Facade
             config.Filters.Add(new IOExceptionFilterAttribute());
             config.Filters.Add(new UnauthorizedAccessExceptionFilterAttribute());
             config.Filters.Add(new PathTooLongExceptionFilterAttribute());
+            config.Filters.Add(new DirectoryNotFoundExceptionFilterAttribute());
         }
     }
 }
