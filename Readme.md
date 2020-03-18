@@ -1,4 +1,5 @@
 ## Vueling Exam
+### Statement
 As a imperial programmer your receive the order of implement a new web service that allows to register any rebeld identification.
 The empire has conquered all universe, but it still remains some group of hidden rebelds. Dark forces, soldiers for the empire, distributed over all know galaxies and solar systems forces empire's citizens to be identified. They need you to develop a distributed service that would be able to be called from any location over the universe.
 As interoperability is a must, you decide to use an old fashioned and very extended technology called wcf web services. The web service should be RestFull to be called from anywhere an http/tcp network is. The web service has to expose a method that accept a list of strings with the name of the rebeld and name of the planet, and response true is register goes fine. The regiter has to be done to file with a datetime with the string "rebeld (name) on (planet) at (datetime)".
