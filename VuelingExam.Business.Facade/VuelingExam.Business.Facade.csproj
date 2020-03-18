@@ -134,6 +134,10 @@
       <Project>{46674549-8800-4D0C-9211-961BFFC94424}</Project>
       <Name>VuelingExam.Application.Logic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\VuelingExam.Business.Filters.Framework\VuelingExam.Business.Filters.Framework.csproj">
+      <Project>{072b34bf-6c34-4412-b638-ae136dfa5c51}</Project>
+      <Name>VuelingExam.Business.Filters.Framework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VuelingExam.Domain.Entities\VuelingExam.Domain.Entities.csproj">
       <Project>{28A09973-9932-4B73-A8E5-73B6F14196B9}</Project>
       <Name>VuelingExam.Domain.Entities</Name>
