@@ -50,9 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IOExceptionFilterAttribute.cs" />
     <Compile Include="NotImplementedExceptionFilterAttribute.cs" />
     <Compile Include="NullReferenceExceptionFilterAttribute.cs" />
+    <Compile Include="PathTooLongExceptionFilterAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnauthorizedAccessExceptionFilterAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using VuelingExam.Domain.Entities;
 
 namespace Vueling.Infrastucture.Repositories.Utilities
@@ -15,7 +16,22 @@ namespace Vueling.Infrastucture.Repositories.Utilities
 		public void CreateFile()
 		{
 			if (!FileExists())
-				File.Create(path);
+				try
+				{
+					File.Create(path);
+				}
+				catch (UnauthorizedAccessException ex)
+				{
+					throw ex;
+				}
+				catch (PathTooLongException ex)
+				{
+					throw ex;
+				}
+				catch (IOException ex)
+				{
+					throw ex;
+				}
 		}
 
 		public bool FileExists()
