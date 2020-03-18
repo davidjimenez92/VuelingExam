@@ -25,13 +25,10 @@ namespace VuelingExam.Application.Logic.Implementations
 			this.repository = repository;
 		}
 
-		public bool Create(Register model)
+		public bool Create(string[] list)
 		{
-			if (model == null)
-			{
-				logger.Debug("Finish Create method");
-				throw new NullReferenceException();
-			}
+			logger.Debug("Start Create method");
+			var model = new Register() { Name = list[0], Planet = list[1], Date = DateTime.Parse(list[2])};
 			var response = repository.Create(model);
 			logger.Debug("Finish Create method");
 			return response;

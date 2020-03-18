@@ -1,10 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using VuelingExam.Application.Logic.Implementations;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using VuelingExam.Domain.Entities;
 using VuelingExam.Application.Logic.Contracts;
 using Autofac.Extras.Moq;
@@ -14,12 +9,12 @@ namespace VuelingExam.Application.Logic.Implementations.Unit.Tests
 	[TestClass()]
 	public class RegisterServiceTests
 	{
-		public static Register inputRegister = null;
+		public static string[] inputRegister = null;
 
 		[TestInitialize]
 		public void Setup()
 		{
-			inputRegister = new Register() { Name = "David", Planet = "Earth", Date = DateTime.Now };
+			inputRegister = new string[] { "David", "Earth", "2020/12/23"};
 		}
 
 		[TestMethod()]
