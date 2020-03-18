@@ -18,7 +18,7 @@ The solution consists of 6 projects plus test projects.
 6. [Test Framework](https://github.com/davidjimenez92/VuelingExamm/tree/master/VuelingExam.Test.Framework) is a library to use the DRY principle and implement it in the integration tests.
 
 ### UML Diagram
-![alt text](https://github.com/davidjimenez92/VuelingExamm/blob/master/ddd.png)
+![alt text](https://github.com/davidjimenez92/VuelingExamm/blob/master/exam-diagram.png)
 ### Technology stack
 `Visual Studio 2019 Comunity edition | C# | .NET Framework 4.7.2`
 
