@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using log4net;
+using Vueling.Infrastucture.Repositories.Contracts;
 using Vueling.Infrastucture.Repositories.Utilities;
 using VuelingExam.Domain.Entities;
 
 namespace Vueling.Infrastucture.Repositories.Implementations
 {
-	class RegisterRepository
+	public class RegisterRepository: IRepository<Register>
 	{
 		private readonly ILog logger = null;
 		private static readonly string path = Resource.FilePath;
