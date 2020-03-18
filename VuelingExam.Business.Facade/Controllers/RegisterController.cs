@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Web.Http;
 using log4net;
 using VuelingExam.Application.Logic.Contracts;
@@ -26,7 +25,12 @@ namespace VuelingExam.Business.Facade.Controllers
         [HttpPost]
         public bool Post(string[] list)
         {
-            logger.Error("Start Post method");
+            logger.Debug("Start Post method");
+            if (list == null)
+            {
+                logger.Error("Finish Post method");
+                throw new NullReferenceException();
+            }
             var response = service.Create(list);
             logger.Error("Finish Post method");
             return response;

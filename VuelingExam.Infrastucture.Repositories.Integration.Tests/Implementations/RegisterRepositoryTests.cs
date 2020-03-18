@@ -1,10 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Vueling.Infrastucture.Repositories.Implementations;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using VuelingExam.Infrastucture.Repositories.Integration.Tests.AutofacModules;
 using VuelingExam.Test.Framework;
 using Vueling.Infrastucture.Repositories.Contracts;

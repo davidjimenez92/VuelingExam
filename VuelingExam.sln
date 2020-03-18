@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.Test.Framework"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.Application.Logic.Integration.Tests", "VuelingExam.Application.Logic.Integration.Tests\VuelingExam.Application.Logic.Integration.Tests.csproj", "{76211EB4-7242-47F3-9A2D-5E142EC1AF7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.Business.Facade.Integration.Tests", "VuelingExam.Business.Facade.Integration.Tests\VuelingExam.Business.Facade.Integration.Tests.csproj", "{3ACDAB3A-F8E1-46A4-A98D-4B659EB51E5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,10 @@ Global
 		{76211EB4-7242-47F3-9A2D-5E142EC1AF7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76211EB4-7242-47F3-9A2D-5E142EC1AF7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76211EB4-7242-47F3-9A2D-5E142EC1AF7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ACDAB3A-F8E1-46A4-A98D-4B659EB51E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ACDAB3A-F8E1-46A4-A98D-4B659EB51E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ACDAB3A-F8E1-46A4-A98D-4B659EB51E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ACDAB3A-F8E1-46A4-A98D-4B659EB51E5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +107,7 @@ Global
 		{5FF1CC9B-4169-4385-BD3B-0BC757A66541} = {9458B40B-0C03-4744-8DC2-E965B033C5F1}
 		{7E77D5C6-79A0-47EF-86AF-2AF50E22CE0D} = {D66FD090-36B0-49E7-A658-166CB6DAA629}
 		{76211EB4-7242-47F3-9A2D-5E142EC1AF7F} = {47FA0542-65B8-478B-8744-DFD9182B241B}
+		{3ACDAB3A-F8E1-46A4-A98D-4B659EB51E5C} = {6069EE9E-932D-4F64-930C-EEDFBCB9D41B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A36BB123-7DBA-4762-85A4-4938FB2F5EF8}
